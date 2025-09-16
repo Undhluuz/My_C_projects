@@ -1,0 +1,16 @@
+D:\My_C++_projects\SimpleAccounting\bin\Debug\SimpleAccounting.dll.config
+D:\My_C++_projects\SimpleAccounting\bin\Debug\SimpleAccounting.dll
+D:\My_C++_projects\SimpleAccounting\bin\Debug\SimpleAccounting.pdb
+D:\My_C++_projects\SimpleAccounting\bin\Debug\EntityFramework.dll
+D:\My_C++_projects\SimpleAccounting\bin\Debug\EntityFramework.SqlServer.dll
+D:\My_C++_projects\SimpleAccounting\bin\Debug\System.Data.SQLite.dll
+D:\My_C++_projects\SimpleAccounting\bin\Debug\System.Data.SQLite.EF6.dll
+D:\My_C++_projects\SimpleAccounting\bin\Debug\System.Data.SQLite.Linq.dll
+D:\My_C++_projects\SimpleAccounting\bin\Debug\EntityFramework.xml
+D:\My_C++_projects\SimpleAccounting\bin\Debug\EntityFramework.SqlServer.xml
+D:\My_C++_projects\SimpleAccounting\bin\Debug\System.Data.SQLite.xml
+D:\My_C++_projects\SimpleAccounting\obj\Debug\SimpleAccounting.DataAccess.csproj.AssemblyReference.cache
+D:\My_C++_projects\SimpleAccounting\obj\Debug\SimpleAccounting.DataAccess.csproj.CoreCompileInputs.cache
+D:\My_C++_projects\SimpleAccounting\obj\Debug\SimpleAccounting.DataAccess.csproj.CopyComplete
+D:\My_C++_projects\SimpleAccounting\obj\Debug\SimpleAccounting.dll
+D:\My_C++_projects\SimpleAccounting\obj\Debug\SimpleAccounting.pdb

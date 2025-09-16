@@ -1,0 +1,39 @@
+﻿<Window x:Class="SimpleAccounting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleAccounting"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Ввод данных для нового контрагента -->
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <Label Content="Name:" Margin="5,0"/>
+            <TextBox Width="100" Text="{Binding NewCounterpartyName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,5,0"/>
+            <Label Content="Tax ID:" Margin="5,0"/>
+            <TextBox Width="100" Text="{Binding NewCounterpartyTaxId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,5,0"/>
+            <Button Content="Add" Command="{Binding AddCounterpartyCommand}" Margin="5,0"/>
+        </StackPanel>
+
+        <!-- DataGrid для отображения контрагентов -->
+        <DataGrid Grid.Row="1" ItemsSource="{Binding Counterparties}" SelectedItem="{Binding SelectedCounterparty, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Tax ID" Binding="{Binding TaxId}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Кнопки для управления -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+            <Button Content="Delete" Command="{Binding DeleteCounterpartyCommand}" Margin="5,0"/>
+            <Button Content="Details" Command="{Binding ShowDetailsCommand}" Margin="5,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
